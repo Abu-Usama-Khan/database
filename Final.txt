@@ -1,0 +1,64 @@
+SECTION A	MCQs
+
+1)  B.
+2)  B.
+3)  A.
+4)  B.
+5)  C.
+6)  B.
+7)  C.
+8)  B.
+9)  C.
+10) B.
+
+----------------------------------------------------------------------------------------------------------
+
+SECTION B	SHORT QUESTIONS
+1-
+
+1) Normalization; when the data is split in multiple tables connected through keys (also it follows some properties) the
+process is called as normalization, as in the given schema the data is stored in multiple tables and related through keys.
+
+   Denormalization; keeping all the data in one table.
+
+2) The normalized database has levels like 1NF, 2NF, etc.
+
+   No levels for denormalization.
+
+3) The normalization is better to perform when you are inserting, updating and deleting database. Also it helps to create
+   efficient database with no dublicates and minimizes null values.
+   
+   The denormalization is better when you need to retrieve data. otherwise use joins and subqueries. result in slower
+   retreival.
+
+-----------------------------------------
+2-
+
+1) Views; It is used to simplify complex query. The Views also remains after session expires.
+
+2) Temp Tables; It is used to create temporary table with specific data for fast execution of queries. I expires or 
+   deletes when the session expires (local) or all session closes (global).
+
+3) Indexing; It is used to index column or group of columns for faster access (due to indexing). The indexing can also
+   be performed in a base table.
+
+-----------------------------------------
+3-
+
+a) Primary key: StudentID, departments.DepartmentID
+
+b) Foreign Key: Students.DepartmentID.
+
+c) Candidate Key: StudentID, RollNumber, CNIC, Email, DepartmentID.
+
+d) Super Key: StudentID, RollNumber, CNIC, Email, DepartmentID, (StudentID, any_column), (RollNumber, any_column),
+             (CNIC, any_column), (Email, any_column), (RollNumber, any_column), (Departments.DepartmentID, DepartmentName),
+	     etc.
+
+e) Surrogate Key: StudentID.
+
+f) Unique Key: StudentID, RollNumber, CNIC, Email, Departments.DepartmentID.
+
+-----------------------------------------
+
+
